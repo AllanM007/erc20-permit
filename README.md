@@ -1,15 +1,45 @@
-# Basic Sample Hardhat Project
+<h1 align="center">Welcome to erc20permit-wrapper 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <a href="#" target="_blank">
+    <img alt="License: ISC" src="https://img.shields.io/badge/License-ISC-yellow.svg" />
+  </a>
+  <a href="https://twitter.com/0xAllan" target="_blank">
+    <img alt="Twitter: 0xAllan" src="https://img.shields.io/twitter/follow/0xAllan.svg?style=social" />
+  </a>
+</p>
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+> ERC20 permit wrapper to implement eip2612 for gasless token transfer approvals
 
-Try running some of the following tasks:
+## Install
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
+```sh
+npm install
 ```
+
+## Usage
+
+```sh
+npx hardhat
+```
+
+## Run tests
+
+```sh
+npx hardhat test
+```
+
+## Author
+
+👤 **Allan**
+
+* Website: https://allanm007.github.io/
+* Twitter: [@0xAllan](https://twitter.com/0xAllan)
+* Github: [@AllanM007](https://github.com/AllanM007)
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
