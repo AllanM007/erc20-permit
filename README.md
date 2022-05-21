@@ -9,7 +9,7 @@
   </a>
 </p>
 
-> ERC20 permit wrapper to implement eip2612 for gasless token transfer approvals
+> Normally EVM expects gas fees to be paid in it's native token Ether when a user wants to approve a dapp to make a transaction on their behalf with their tokens which is an extra cost to the user that can be avoided. This project implements EIP2612 stardard by allowing erc20 token gasless approvals using user's signature instead of approval transactions to the EVM network.
 
 ## Install
 
