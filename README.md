@@ -9,9 +9,14 @@
   </a>
 </p>
 
-> Normally EVM expects gas fees to be paid in it's native token Ether when a user wants to approve a dapp to make a transaction on their behalf with their tokens which is an extra cost to the user that can be avoided. This project implements EIP2612 stardard by allowing erc20 token gasless approvals using user's signature instead of approval transactions to the EVM network.
+> Currently ERC20 implementations require a user to approve a dapp to use their tokens by submitting a transaction which requires gas fees to be paid each time a user wants to approve a dapp to make a transaction on their behalf with their tokens which is an extra cost to the user that can be avoided. This project is an abstract implementation of the EIP2612 stardard allowing erc20 token gasless approvals using user's signature instead of approval transactions to the EVM network.
 
-> Reference Sources
+##  Reference Sources
+
+Some sources that assisted me to understand EIP2612 standard and it's purpose and previous ERC20 limitations.
+> i) https://eips.ethereum.org/EIPS/eip-2612 (eip2612 proposal)
+ii) https://www.youtube.com/watch?v=S4vnFm5hI8A&t=966s. (MakerDAO DAI permit implementation)
+iii) https://github.com/makerdao/developerguides/blob/master/dai/how-to-use-permit-function/how-to-use-permit-function.md (MakerDAO Permit Function Walkthrough)
 
 ## Install
 

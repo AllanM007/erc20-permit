@@ -2,8 +2,7 @@ const API_KEY = process.env.ALCHEMY_KEY;
 const PRIVATE_KEY = process.env.PRIVATE_KEY;
 const CONTRACT_ADDRESS = process.env.TokenContract;
 
-const { ethers, providers } = require("ethers");
-const { json } = require("hardhat/internal/core/params/argumentTypes");
+const { ethers } = require("ethers");
 const contract = require("../artifacts/contracts/Token.sol/ERC20.json");
 
 // Provider

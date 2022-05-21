@@ -4,8 +4,10 @@
   "description": "ERC20 permit wrapper to implement eip2612 for gasless token transfer approvals",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "build": "waffle"
   },
+  "flattenOutputDirectory": "./flatten",
   "keywords": [
     "solidity",
     "erc20",
@@ -19,7 +21,8 @@
     "chai": "^4.3.6",
     "ethereum-waffle": "^3.4.4",
     "ethers": "^5.6.6",
-    "hardhat": "^2.9.5"
+    "hardhat": "^2.9.5",
+    "mocha": "^10.0.0"
   },
   "dependencies": {
     "dotenv": "^16.0.1",
