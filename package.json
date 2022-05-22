@@ -4,8 +4,8 @@
   "description": "ERC20 permit wrapper to implement eip2612 for gasless token transfer approvals",
   "main": "index.js",
   "scripts": {
-    "test": "test",
-    "build": "waffle"
+    "build": "waffle",
+    "test": "NODE_ENV=test mocha"
   },
   "flattenOutputDirectory": "./flatten",
   "keywords": [

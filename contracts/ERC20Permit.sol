@@ -4,11 +4,11 @@ pragma solidity ^0.8.0;
 import "./IERC20.sol";
 
 contract ERC20Permit is IERC20 {
-    mapping(address => uint) public override balanceOf;
-    mapping(address => mapping(address=>uint)) public override allowance;
+    mapping (address => uint) public override balanceOf;
+    mapping (address => mapping(address=>uint)) public override allowance;
     mapping (address => uint) private nonces;
     
-    uint256 public _totalSupply;
+    uint256 public override totalSupply;
 
     string private _name;
     string private _symbol;
@@ -118,14 +118,14 @@ contract ERC20Permit is IERC20 {
 
     function mint(address account, uint amount) internal virtual {
         balanceOf[account] += amount;
-        _totalSupply += amount;
+        totalSupply += amount;
 
         emit Transfer(address(0), account, amount);
     }
 
     function burn(address account, uint amount) external {
         balanceOf[account] -= amount;
-        _totalSupply -= amount;
+        totalSupply -= amount;
 
         emit Transfer(account, address(0), amount);
     }
