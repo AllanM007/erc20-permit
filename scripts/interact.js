@@ -20,11 +20,4 @@ const mintFunc = async() => {
     const message = await tokenContract.functions.mint("100")
     console.log("The message is: " + message);
 }
-// mintFunc()
-
-const permitFunc = async() => {
-
-    const response = await tokenContract.functions.permit(signer)
-    console.log("The response is: " + response);
-}
-// permitFunc()
+mintFunc()
